@@ -38,6 +38,11 @@ MORSE_CODE = {
     '-----' => '0'
 }.freeze
 
+# decoding a Morse code character, and return the corresponding character in uppercase
+def decode_morse_character(char)
+    MORSE_CODE[char].upcase
+end
+
 #method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces.
 def decode(message)
     words = split_message(message)
