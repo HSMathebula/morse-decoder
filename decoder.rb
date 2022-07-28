@@ -48,6 +48,16 @@ def split_message(message)
     message.split('   ')
 end
 
+#decode an entire word in Morse code, takes a string parameter, and return the string representation. Every character in a word will be separated by a single space.
+def decode_word(word)
+    decoded_word = ''
+    word.split.each do |morse|
+        decoded_char = decode_morse_character(morse)
+        decoded_word += decoded_char.to_s
+    end
+    decoded_word
+end
+
 #method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces.
 def decode(message)
     words = split_message(message)
@@ -58,3 +68,6 @@ def decode(message)
     end
     decoded_message.strip
 end
+
+message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
+print decode(message)
