@@ -71,5 +71,7 @@ def decode(message)
   decoded_message.strip
 end
 
-message = '.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...'
-print decode(message)
+puts decode(".-")
+puts decode ("-- -.--")
+puts decode("-- -.--   -. .- -- .")
+puts decode('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
