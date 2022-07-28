@@ -43,6 +43,11 @@ def decode_morse_character(char)
     MORSE_CODE[char].upcase
 end
 
+#split sentence to single words
+def split_message(message)
+    message.split('   ')
+end
+
 #method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces.
 def decode(message)
     words = split_message(message)
