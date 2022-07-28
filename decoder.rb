@@ -37,3 +37,14 @@ MORSE_CODE = {
     '----.' => '9',
     '-----' => '0'
 }.freeze
+
+#method to decode the entire message in Morse code, takes a string parameter, and return the string representation. Every word will be separated by 3 spaces.
+def decode(message)
+    words = split_message(message)
+    decoded_message = ''
+    words.each do |word|
+        decoded_word =  decode_word(word)
+        decoded_message += "#{decoded_word} "
+    end
+    decoded_message.strip
+end
