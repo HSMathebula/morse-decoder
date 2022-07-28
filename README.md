@@ -15,10 +15,16 @@ To get a local copy up and running follow these simple example steps.
 3- Open the command prompt in this directory. <br>
 4- Write `git clone https://github.com/HSMathebula/morse-decoder.git` <br>
 5- Go to the repository folder in your command prompt `cd morse-decoder`. <br>
+6- Go to command line and run `ruby morse-decoder.rb`  or you can just paste the code on IRB (Interactive Ruby) 
+
+To setup linters on your local environment, please follow these steps.
+
+1- Run `bundle install`.
+2- Run `rubocop .` for the errors.
 
 ### Prerequisites
 
-IRB or VSCode
+IRB(Interactive Ruby), VSCode, WSL(for Windows OS), for linters on local environment Ruby Gem.
 
 ## Authors
 
